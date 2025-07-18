@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d241b33-4e7b-4217-932e-af4046082636" name="Changes" comment="Initialize Flask project with application factory, configuration management, logging setup, and basic views.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9d241b33-4e7b-4217-932e-af4046082636" name="Changes" comment="Add comprehensive .gitignore file for Python and project-specific files.">
+      <change afterPath="$PROJECT_DIR$/app/templates/functions/audioplayer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/functions/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +18,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -85,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752767415745</updated>
       <workItem from="1752767416761" duration="1939000" />
-      <workItem from="1752849083596" duration="373000" />
+      <workItem from="1752849083596" duration="1328000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize Flask project with application factory, configuration management, logging setup, and basic views.">
       <option name="closed" value="true" />
@@ -103,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752768518236</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add comprehensive .gitignore file for Python and project-specific files.">
+      <option name="closed" value="true" />
+      <created>1752849475450</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752849475450</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize Flask project with application factory, configuration management, logging setup, and basic views." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize Flask project with application factory, configuration management, logging setup, and basic views." />
+    <MESSAGE value="Add comprehensive .gitignore file for Python and project-specific files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comprehensive .gitignore file for Python and project-specific files." />
   </component>
 </project>
