@@ -1,0 +1,27 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "pycruz_prod_db",
+    "user": "pycruz_user",
+    "password": "secure_production_password"
+  },
+  "logging": {
+    "level": "WARNING",
+    "file_path": "logs/prod_app.log",
+    "max_file_size": 52428800,
+    "backup_count": 10,
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+  "flask": {
+    "secret_key": "your-super-secure-production-secret-key-change-this",
+    "debug": false,
+    "host": "0.0.0.0",
+    "port": 5000
+  },
+  "features": {
+    "enable_registration": true,
+    "enable_password_reset": true,
+    "max_login_attempts": 3
+  }
+}

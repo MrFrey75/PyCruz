@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d241b33-4e7b-4217-932e-af4046082636" name="Changes" comment="Add comprehensive .gitignore file for Python and project-specific files.">
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+    <list default="true" id="9d241b33-4e7b-4217-932e-af4046082636" name="Changes" comment="Redesign frontend with modern layout and styling. Implement dynamic navbar, hero section, and feature highlights. Update templates and static assets to align with new UI/UX design.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.prod.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.prod.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752767415745</updated>
       <workItem from="1752767416761" duration="1939000" />
-      <workItem from="1752849083596" duration="1644000" />
+      <workItem from="1752849083596" duration="1844000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize Flask project with application factory, configuration management, logging setup, and basic views.">
       <option name="closed" value="true" />
@@ -124,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752851633422</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Redesign frontend with modern layout and styling. Implement dynamic navbar, hero section, and feature highlights. Update templates and static assets to align with new UI/UX design.">
+      <option name="closed" value="true" />
+      <created>1752851968834</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752851968834</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize Flask project with application factory, configuration management, logging setup, and basic views." />
     <MESSAGE value="Add comprehensive .gitignore file for Python and project-specific files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comprehensive .gitignore file for Python and project-specific files." />
+    <MESSAGE value="Redesign frontend with modern layout and styling. Implement dynamic navbar, hero section, and feature highlights. Update templates and static assets to align with new UI/UX design." />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign frontend with modern layout and styling. Implement dynamic navbar, hero section, and feature highlights. Update templates and static assets to align with new UI/UX design." />
   </component>
 </project>
