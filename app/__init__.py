@@ -17,7 +17,6 @@ def create_app():
 
     # Register blueprints
     from app.views.main import main_bp
-
     app.register_blueprint(main_bp)
 
     # Error handlers

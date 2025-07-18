@@ -1,10 +1,298 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block title %}PyCruz - Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Welcome to PyCruz</h1>
+        <p class="hero-subtitle">Your ultimate audio experience platform</p>
+        <div class="hero-buttons">
+            <a href="#" class="btn">Get Started</a>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="grid">
+        <div class="grid-item">
+            <div class="feature-icon">
+                <i class="fas fa-play-circle"></i>
+            </div>
+            <h3>Audio Player</h3>
+            <p>High-quality audio playback with advanced controls and customization options.</p>
+        </div>
+        
+        <div class="grid-item">
+            <div class="feature-icon">
+                <i class="fas fa-list-music"></i>
+            </div>
+            <h3>Playlist Management</h3>
+            <p>Create, organize, and manage your music collections with ease.</p>
+        </div>
+        
+        <div class="grid-item">
+            <div class="feature-icon">
+                <i class="fas fa-waveform"></i>
+            </div>
+            <h3>Audio Analysis</h3>
+            <p>Visualize your audio with spectrum analysis and waveform display.</p>
+        </div>
+        
+        <div class="grid-item">
+            <div class="feature-icon">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </div>
+            <h3>File Upload</h3>
+            <p>Easily upload and manage your audio files in various formats.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+    <div class="card">
+        <h2 class="text-center">Platform Statistics</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">10k+</div>
+                <div class="stat-label">Songs Played</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Users</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Playlists</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Uptime</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Actions -->
+<section class="quick-actions">
+    <div class="card">
+        <h2>Quick Actions</h2>
+        <div class="actions-grid">
+            <a href="#" class="action-card">
+                <i class="fas fa-upload"></i>
+                <span>Upload Audio</span>
+            </a>
+            <a href="#" class="action-card">
+                <i class="fas fa-play"></i>
+                <span>Start Playing</span>
+            </a>
+            <a href="#" class="action-card">
+                <i class="fas fa-plus"></i>
+                <span>Create Playlist</span>
+            </a>
+            <a href="#" class="action-card">
+                <i class="fas fa-chart-line"></i>
+                <span>View Analytics</span>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(100, 181, 246, 0.1) 0%, rgba(30, 30, 46, 0.1) 100%);
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: #b0b0b0;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Features Section */
+.features {
+    margin: 3rem 0;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #64b5f6;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.grid-item h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.grid-item p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Stats Section */
+.stats {
+    margin: 3rem 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #64b5f6;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+}
+
+/* Quick Actions */
+.quick-actions {
+    margin: 3rem 0;
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.action-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.action-card:hover {
+    background: rgba(100, 181, 246, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(100, 181, 246, 0.2);
+}
+
+.action-card i {
+    font-size: 2.5rem;
+    color: #64b5f6;
+    margin-bottom: 1rem;
+}
+
+.action-card span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .actions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+{% endblock %}
